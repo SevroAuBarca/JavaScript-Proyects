@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+:root {
+  --radio-1: 0px;
+  --radio-2: 0px;
+  --radio-3: 0px;
+  --radio-4: 0px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: thistle;
+}
+
+.container #box {
+  width: 50%;
+  height: 30vh;
+  border: 3px solid #333;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .form {
+  width: 70%;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.container .form .input {
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.container .buttons {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+.container .buttons input[type="button"] {
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+.container #box .text {
+  width: 70%;
+  height: 25vh;
+  background-color: darkgray;
+}
+
+.container #box {
+  border-radius: var(--radio-1) var(--radio-2) var(--radio-4) var(--radio-3);
+}
+
+p {
+  text-align: center;
+}
