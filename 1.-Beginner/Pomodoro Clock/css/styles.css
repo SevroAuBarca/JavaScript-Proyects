@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url(../space.jpg);
+  background-size: 100% 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.container .title {
+  grid-column: 2/3;
+  font-size: 2.5em;
+  margin-top: 10vh;
+  text-align: center;
+}
+.container .time {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.container .time .text {
+  font-size: 5em;
+}
+
+.container .contain-btn {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.container .contain-btn .btn {
+  width: 15%;
+  height: 5vh;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  margin: 2px;
+}
