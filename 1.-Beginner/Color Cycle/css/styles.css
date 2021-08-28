@@ -1,0 +1,79 @@
+:root {
+  --color1: #ffffff;
+  --color2: #ffffff;
+  --color3: #ffffff;
+  --color4: #ffffff;
+  --color5: #ffffff;
+  --interval: 5s;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  animation-name: colorchange;
+  animation-duration: var(--interval);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.container .container-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+.container .container-form .form-group .form-color {
+  width: 80px;
+  height: 80px;
+  margin: 1px;
+  border-radius: 5px;
+  border: none;
+}
+
+.container .container-form .form-submit {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-form .form-submit .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: burlywood;
+}
+
+.container .container-form .form-submit .btn:active {
+  background-color: chocolate;
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: var(--color1);
+  }
+  25% {
+    background-color: var(--color2);
+  }
+  50% {
+    background-color: var(--color3);
+  }
+  75% {
+    background-color: var(--color4);
+  }
+  100% {
+    background-color: var(--color5);
+  }
+}
