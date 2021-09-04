@@ -11,7 +11,7 @@ Nota: ~~Ninguno~~ es responsive aun, asi que de preferencia abranlos en un pc.
 1. **Beginner proyects**:
     | Completado    | Nombre        | Link  |
     | ------------- |:-------------:| -----:|
-    | * [x]         | Bin 2 dec |           |
+    | :heavy_check_mark:        | Bin 2 dec |           |
     | col 2 is      | centered      |   $12 |
     | zebra stripes | are neat      |    $1 |
    
