@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 160vh;
+}
+
+.container-btn {
+  padding-top: 3vh;
+  height: 20vh;
+  text-align: center;
+}
+.container-btn .btn {
+  margin-top: 2vh;
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  border: none;
+}
+.container-btn .btn .food {
+  width: 50px;
+  height: 50px;
+}
+
+.container-meal {
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 55vh 50vh;
+}
+
+.cont-meal-ing {
+  width: 100%;
+  display: flex;
+}
+
+.container-meal .img {
+  width: 40%;
+  height: 55vh;
+  object-fit: cover;
+}
+
+.container-meal .meal-ingredients {
+  width: 60%;
+  height: 55vh;
+
+  overflow: hidden;
+}
+
+.container-meal .meal-ingredients h4 {
+  text-align: center;
+}
+.container-meal .meal-ingredients .instrutions {
+  padding: 10px;
+  height: 50vh;
+  overflow-y: scroll;
+}
+.container-meal .ingredients {
+  height: 25vh;
+}
+
+.container-meal .list {
+  padding: 10px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.container-meal .vid {
+  width: 100%;
+  height: 60vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
